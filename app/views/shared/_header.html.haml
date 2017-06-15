@@ -1,0 +1,24 @@
+%section#top-header.row
+  .col-md-2
+    .main-logo
+      = link_to "Yelp", root_path
+  %ul.col-md-4.clearfix.nav.navbar-nav
+    %li.nav-item= link_to "Businesses", businesses_path
+    %li.nav-item= link_to "Add Business", new_business_path
+    %li.nav-item= link_to "Write a Review", new_review_path
+  - if logged_in?
+    #user_links.pull-right
+      %ul.nav
+        %li.nav-item.dropdown
+          %a(href="#" id="dlabel" role="button" data-toggle="dropdown" class="dropdown-toggle" data-target="#")
+            Welcome, #{current_user.first_name}
+            %b.caret
+          %ul.dropdown-menu(role="menu" aria-labelledby="dlabel")
+            %li
+              %a(href="#") Account
+              %a(href="#") Plan and Billing
+              = link_to "Sign Out", logout_path
+  - else
+    #user_links.pull-right
+      =link_to "Login", login_path, class: "btn btn-default"
+      =link_to "Register", register_path, class: "btn btn-default"

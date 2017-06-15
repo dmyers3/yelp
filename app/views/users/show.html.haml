@@ -1,0 +1,13 @@
+%h1 User Profile
+%h2= @user.full_name
+%h4 Reviews
+%br
+%ul
+  - @user.reviews.each do |review|
+    %li
+      %h6= review.business.name
+      %p= "#{review.rating}/5 Stars"
+      %p= review.description
+      %br
+      
+  

@@ -1,0 +1,4 @@
+%ul.businesses
+  -@businesses.each do |business|
+    %li{data: {id: business.id}}
+      = link_to business.name, business

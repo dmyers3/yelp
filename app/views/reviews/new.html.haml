@@ -1,0 +1,6 @@
+.col-sm-6.clearfix
+  = bootstrap_form_for (@review) do |f|
+    = f.select :business_id, businesses
+    = f.select :rating, options_for_stars
+    = f.text_area :description
+    = f.submit "Submit Review"

@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: yelp_development
+  pool: 5
+  username: ubuntu
+  password:
+  template: template0
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: yelp_test
+  pool: 5
+  username: ubuntu
+  password:
+  template: template0
+

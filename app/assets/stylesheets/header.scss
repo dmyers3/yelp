@@ -1,0 +1,32 @@
+section#top-header {
+  background: #d32323 url(https://s3-media4.fl.yelpcdn.com/assets/srv0/yelp_styleguide/c146b0884f6a/assets/img/structural/header_stars.png) no-repeat center;
+  .main-logo { 
+    height: 50px;
+    background: url(https://s3-media3.fl.yelpcdn.com/assets/srv0/yelp_styleguide/21bc82aab542/assets/img/logos/logo_desktop_small.png) no-repeat;
+    background-size: 72px 36px;
+    background-position: right center;
+    a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      text-indent: -1000em;
+    }
+  }
+  .nav-item a {
+    color: #ffffff;
+    &:hover {
+      background: #a71c1c;
+    }
+  }
+  
+  .dropdown-menu {
+    li a {
+      color: #d32323;
+      
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  
+}

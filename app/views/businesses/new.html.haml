@@ -1,0 +1,9 @@
+= bootstrap_form_for(@business, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-6") do |f|
+  = f.text_field :name, label: "Business Name"
+  = f.text_field :street_address_1
+  = f.text_field :street_address_2
+  = f.text_field :city
+  = f.select :state, us_states, selected: state_default
+  = f.text_field :zip
+  = f.phone_field :phone_number
+  = f.submit
